@@ -1,0 +1,75 @@
+{
+  "device": {
+    "device_id": "MCAM-001"
+  },
+
+  "storage": {
+    "base_dir": "/home/raspi5/camera_data"
+  },
+
+  "cameras": [
+    {
+      "camera_id": "CAM001",
+      "name": "C270",
+
+      "device": "/dev/v4l/by-id/usb-046d_C270_HD_WEBCAM_828CAC60-video-index0",
+
+      "video": {
+        "width": 640,
+        "height": 480,
+        "camera_fps": 30,
+        "record_fps": 1,
+        "segment_seconds": 60,
+        "bitrate_kbps": 1500,
+        "input_format": "MJPG"
+      },
+
+      "snapshot": {
+        "method": "yuy2_warmup",
+        "width": 640,
+        "height": 480,
+        "fps": 30,
+        "warmup_frames": 30,
+        "min_file_size": 10000
+      }
+    },
+
+    {
+      "camera_id": "CAM002",
+      "name": "GENERAL_UVC",
+
+      "device": "/dev/v4l/by-id/usb-Generic_GENERAL_-_UVC-video-index0",
+
+      "video": {
+        "width": 640,
+        "height": 480,
+        "camera_fps": 30,
+        "record_fps": 1,
+        "segment_seconds": 60,
+        "bitrate_kbps": 1500,
+        "input_format": "MJPG"
+      },
+
+      "snapshot": {
+        "method": "mjpeg",
+        "width": 640,
+        "height": 480,
+        "fps": 30,
+        "min_file_size": 1000
+      }
+    }
+  ],
+
+  "server": {
+    "ip": "100.78.67.59",
+    "port": 8000,
+    "upload_endpoint": "/upload",
+    "health_endpoint": "/health"
+  },
+
+  "uploader": {
+    "check_interval": 10,
+    "file_stable_time": 3,
+    "delete_after_upload": true
+  }
+}
