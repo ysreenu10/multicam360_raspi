@@ -17,7 +17,8 @@ import urllib.error
 DEVICE_ID = "MCAM-001"
 
 # CHANGE THIS to your laptop's IP address
-SERVER_IP = "100.78.67.59"
+# SERVER_IP = "100.78.67.59" //sreenu ip 
+SERVER_IP = "100.127.44.4" #lokesh ip 
 
 SERVER_PORT = 8000
 

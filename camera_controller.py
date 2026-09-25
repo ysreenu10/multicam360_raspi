@@ -24,7 +24,7 @@ from multicam_event import send_event
 # ============================================================
 
 CONFIG_FILE = Path(
-    "/home/raspi5/multicam_config.json"
+    "/home/raspi5/multicam/multicam_config.json"
 )
 
 

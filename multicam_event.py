@@ -11,7 +11,8 @@ import urllib.error
 
 DEVICE_ID = "MCAM-001"
 
-SERVER_IP = "100.78.67.59"
+# SERVER_IP = "100.78.67.59"//sreenu lap ip
+SERVER_IP = "100.127.44.4"
 SERVER_PORT = 8000
 
 EVENT_URL = (

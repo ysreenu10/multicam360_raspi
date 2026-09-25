@@ -19,7 +19,7 @@
         "height": 480,
         "camera_fps": 30,
         "record_fps": 1,
-        "segment_seconds": 60,
+        "segment_seconds": 30,
         "bitrate_kbps": 1500,
         "input_format": "MJPG"
       },
@@ -44,8 +44,8 @@
         "width": 640,
         "height": 480,
         "camera_fps": 30,
-        "record_fps": 1,
-        "segment_seconds": 60,
+        "record_fps": 30,
+        "segment_seconds":30,
         "bitrate_kbps": 1500,
         "input_format": "MJPG"
       },
@@ -61,7 +61,7 @@
   ],
 
   "server": {
-    "ip": "100.78.67.59",
+    "ip": "100.127.44.4",
     "port": 8000,
     "upload_endpoint": "/upload",
     "health_endpoint": "/health"
